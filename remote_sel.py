@@ -14,7 +14,7 @@ driver.get("http://www.google.com")
 search_field = driver.find_element_by_id("lst-ib")
 search_field.clear()
 # enter search keyword and submit
-search_field.send_keys("Selenium WebDriver Interview questions")
+search_field.send_keys("Selenium WebDriver")
 search_field.submit()
 # get the list of elements which are displayed after the search
 # currently on result page using find_elements_by_class_name  method
@@ -30,4 +30,4 @@ for listitem in lists:
 	if(i>10):
 		break
 # close the browser window
-driver.quit()
+# driver.quit()
